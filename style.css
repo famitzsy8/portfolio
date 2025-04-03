@@ -1,0 +1,76 @@
+/* BASIC RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL BODY STYLES */
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+    /* White background for your black drawings */
+    color: #000000;
+    /* Black text */
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+    /* So it doesn't stretch too wide on big screens */
+    padding: 20px;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* BANNER SECTION */
+.banner {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #000;
+    /* Gives your drawing a subtle black border */
+}
+
+/* ABOUT SECTION */
+#about {
+    margin-bottom: 40px;
+}
+
+/* GALLERY SECTION */
+#gallery {
+    margin-bottom: 40px;
+}
+
+.art-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.art-grid img {
+    max-width: 200px;
+    border: 2px solid #000;
+    padding: 5px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #333;
+    /* Slightly lighter text for the footer */
+}

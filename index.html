@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Minimal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Your Name</h1>
+        <p>A minimal showcase of my work and drawings.</p>
+    </header>
+
+    <!-- Main Image or Banner (Optional) -->
+    <section class="banner">
+        <!-- Replace sample1.png with your own black-and-white PNG -->
+        <img src="images/sample1.png" alt="A black and white drawing" />
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Write a short introduction here.
+            Talk about your background, your passions,
+            and maybe your favorite mediums for art.
+        </p>
+    </section>
+
+    <!-- Portfolio / Gallery Section -->
+    <section id="gallery">
+        <h2>My Drawings</h2>
+        <div class="art-grid">
+            <!-- Replace these placeholders with your actual drawings -->
+            <img src="images/sample2.png" alt="Drawing 1" />
+            <img src="images/sample1.png" alt="Drawing 2" />
+            <!-- Add as many images as you like -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+    </footer>
+
+    <!-- Optional script just to auto-update the year -->
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
