@@ -18,8 +18,14 @@
 
     <!-- Main Image or Banner (Optional) -->
     <section class="banner">
-        <!-- Replace sample1.png with your own black-and-white PNG -->
-        <img src="images/sample5.png" alt="A black and white drawing" />
+        <div id="banner-images">
+            <!-- Add 10 images dynamically -->
+            <img src="images/sample1.png" alt="Sample 1" />
+            <img src="images/sample2.png" alt="Sample 2" />
+            <img src="images/sample3.png" alt="Sample 3" />
+            <img src="images/sample4.png" alt="Sample 4" />
+            <img src="images/sample5.png" alt="Sample 5" />
+        </div>
     </section>
 
     <!-- About Section -->
@@ -51,6 +57,12 @@
     <!-- Optional script just to auto-update the year -->
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
+
+        // Apply animation to the banner images
+        const bannerImages = document.querySelectorAll('#banner-images img');
+        if (bannerImages.length === 5) {
+            animateImagesOnScroll(Array.from(bannerImages));
+        }
     </script>
 </body>
 
